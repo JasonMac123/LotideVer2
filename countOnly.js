@@ -8,11 +8,6 @@ const countOnly = function(allItems, itemsToCount) {
       countingObject[name] += 1;
     }
   }
-  for (const countName in countingObject) {
-    if (countingObject[countName] === 0) {
-      countingObject[countName] = undefined;
-    }
-  }
   return countingObject;
 };
 module.exports = countOnly;
